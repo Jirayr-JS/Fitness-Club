@@ -1,0 +1,1680 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fffafb;
+}
+
+.header-content {
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.header-content.active {
+  transform: translateX(0);
+}
+
+.header-group {
+  width: 114.03px;
+  height: 158.33px;
+  background: rgba(255, 38, 37, 0.03);
+  border-radius: 5px;
+  position: absolute;
+  left: 0px;
+  top: 187px;
+}
+
+.header-group-position {
+  width: 103.37px;
+  height: 217.4px;
+  background: rgba(255, 38, 37, 0.03);
+  border-radius: 5px;
+  position: absolute;
+  left: 29px;
+  top: 255px;
+}
+
+.nav-bar {
+  max-width: 1170px;
+  height: 59px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 2rem;
+  z-index: 3;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 32px;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.header-list {
+  list-style-type: none;
+  width: 352px;
+  height: 38px;
+  margin-left: 186px;
+  margin-top: 32px;
+  gap: 66px;
+  display: flex;
+}
+
+.header-list a.current,
+.header-list a:hover {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: #3a1212;
+  border-bottom: 2px solid #ff2625;
+  mix-blend-mode: multiply;
+}
+
+.header-list li {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 38.4px;
+}
+
+.header-list a {
+  text-decoration: none;
+  color: #837171;
+}
+
+.toggle {
+  background: #ffffff url('./images/Vector.png');
+  width: 46px;
+  height: 46px;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  filter: drop-shadow(0px 5px 10px rgba(255, 141, 141, 0.25));
+  z-index: 20;
+  cursor: pointer;
+}
+
+.toggle.active {
+  background: url('./images/close.png');
+  width: 46px;
+  height: 46px;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: center;
+  cursor: pointer;
+  position: absolute;
+  left: 78rem;
+}
+
+.navigation {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 280px;
+  height: 100%;
+  background-color: #f1c201ff;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%);
+  transition: 0.5s;
+}
+
+.navigation.active {
+  transform: translateX(-0);
+}
+
+.navigation ul {
+  list-style-type: none;
+  position: relative;
+}
+
+.navigation li a {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 160%;
+  color: #008b8bff;
+}
+
+.navigation li a:hover {
+  color: #af002aff;
+}
+
+.img-block {
+  max-width: 758px;
+  height: 1007px;
+  border-radius: 0px 0px 0px 107px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+}
+
+.rectangle {
+  width: 26px;
+  height: 2px;
+  background: #ff2625;
+  position: absolute;
+  left: 185px;
+  top: 338px;
+}
+
+.sub-heading {
+  width: 177px;
+  height: 42px;
+  margin-left: 215px;
+  margin-top: 224px;
+}
+
+.text-section {
+  width: 472px;
+  height: 278px;
+}
+
+.club {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 1.6;
+  color: #ff2625;
+}
+
+.vector {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  left: 387px;
+}
+
+.repat {
+  width: 472px;
+  height: 176px;
+  margin-left: 215px;
+  margin-top: 14px;
+}
+
+.repat h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.1;
+  color: #3a1212;
+}
+
+.sweat {
+  width: 470px;
+  height: 79px;
+  margin-left: 215px;
+}
+
+.sweat span {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.6;
+  color: #504747;
+}
+
+.cta {
+  width: 600px;
+  height: 58px;
+  margin-left: 195px;
+  margin-top: 13px;
+}
+
+.lern {
+  padding: 8px 20px;
+  border-radius: 29px;
+  border: 0.75px solid #ff2625;
+  background: #ffffff;
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #3a1212;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.lern:hover {
+  background: #ff2625;
+  color: #ffffff;
+}
+
+.join {
+  padding: 8px 27px;
+  border-radius: 29px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 20px;
+  border: none;
+  background: #ff2625;
+  border: 0.75px solid #ff2625;
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.join:hover {
+  border: 0.75px solid #ff2625;
+  background: #ffffff;
+  color: #3a1212;
+}
+
+.join:focus {
+  outline: 0;
+}
+
+.play {
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  left: 685px;
+  top: 409px;
+  filter: drop-shadow(0px 40px 80px rgba(255, 71, 70, 0.1));
+}
+
+.dots {
+  width: 118px;
+  height: 134px;
+  position: absolute;
+  left: 1458px;
+  top: 932px;
+  z-index: 20;
+}
+
+.exercise {
+  max-width: 742px;
+  height: 320px;
+  margin-left: 115px;
+  margin-top: 103px;
+}
+
+.exercise h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 200px;
+  line-height: 1.6;
+  color: rgba(255, 38, 37, 0.05);
+}
+
+.extra {
+  width: 52px;
+  height: 52px;
+  margin-left: 32px;
+}
+
+.home-content {
+  max-width: 1170.45px;
+  height: 588.45px;
+  margin: 0 auto;
+  margin-top: 37px;
+}
+
+.our {
+  width: 152px;
+  height: 42px;
+  margin: 0 auto;
+}
+
+.our span {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 1.6;
+  color: #ff2625;
+}
+
+.that {
+  width: 594px;
+  height: 114px;
+  margin: 0 auto;
+  margin-top: 13px;
+}
+
+.that h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.3;
+  text-align: center;
+  color: #3a1212;
+}
+
+.home-cmoponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vectore {
+  width: 270px;
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 78px;
+}
+
+.vectore .icon img {
+  max-width: 20%;
+}
+
+.home-info {
+  width: 118px;
+  margin: 0 auto;
+  margin-top: 23px;
+}
+
+.vectore h4 {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.2;
+  color: #3a1212;
+}
+
+.home-info {
+  position: relative;
+  display: inline-block;
+}
+
+.home-info .home-title-1 {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.2;
+  text-align: center;
+  color: #ff2625;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 58px;
+  opacity: 0;
+  z-index: 3;
+}
+
+.home-info:hover .home-title-1 {
+  opacity: 1;
+}
+
+.home-info .home-title-2 {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.2;
+  text-align: center;
+  color: #ff2625;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 58px;
+  opacity: 0;
+  z-index: 3;
+}
+
+.home-info:hover .home-title-2 {
+  opacity: 1;
+}
+
+.home-info .home-title-3 {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.2;
+  text-align: center;
+  color: #ff2625;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 58px;
+  z-index: 3;
+}
+
+.home-info .home-title-4 {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.2;
+  text-align: center;
+  color: #ff2625;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 58px;
+  opacity: 0;
+  z-index: 3;
+}
+
+.home-info:hover .home-title-4 {
+  opacity: 1;
+}
+
+.training-content {
+  max-width: 1213px;
+  height: 710px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.training-container img {
+  max-width: 100%;
+  border-radius: 2px 2px 100px 2px;
+}
+
+.trainig-icon {
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  left: 50px;
+  top: 2257px;
+}
+
+.trainig-icon img {
+  max-width: 100%;
+}
+
+.training-group {
+  width: 50px;
+  height: 50px;
+  margin-left: 1071px;
+}
+
+.training-group img {
+  max-width: 100%;
+}
+
+.training-icon-2 {
+  width: 118px;
+  height: 134px;
+  position: absolute;
+  left: 143px;
+  top: 1825px;
+}
+
+.training-icon-2 img {
+  max-width: 100%;
+}
+
+.training-component {
+  max-width: 502px;
+  height: 454px;
+  margin-top: 57px;
+}
+
+.content-text {
+  max-width: 502px;
+  margin-top: 117px;
+}
+
+.training-component span {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 1.6;
+  color: #ff2625;
+}
+
+.training-component h2 {
+  margin-top: 18px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.3;
+  color: #3a1212;
+}
+
+.training-component p {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.6;
+  margin-top: 18px;
+  color: #504747;
+}
+
+.training-btn {
+  padding: 5px 20px;
+  border-radius: 29px;
+  background: #ff2625;
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  border: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ffffff;
+  filter: drop-shadow(0px 20px 40px rgba(255, 155, 154, 0.25));
+  margin-top: 33px;
+  cursor: pointer;
+}
+
+.training-btn:hover {
+  background: brown;
+}
+
+.training-group-2 {
+  width: 53px;
+  height: 53px;
+  position: absolute;
+  left: 1497px;
+  top: 2054px;
+}
+
+.trainers-group-2 img {
+  max-width: 100%;
+}
+
+.training-group-3 {
+  width: 114.03px;
+  height: 158.33px;
+  background: rgba(255, 38, 37, 0.04);
+  border-radius: 5px;
+  position: absolute;
+  left: 1446px;
+  top: 2340px;
+}
+
+.training-group-4 {
+  width: 103.37px;
+  height: 217.4px;
+  background: rgba(255, 38, 37, 0.04);
+  border-radius: 5px;
+  position: absolute;
+  left: 1418px;
+  top: 2430px;
+}
+
+.training-group-5 {
+  width: 53px;
+  width: 53px;
+  position: absolute;
+  left: 1031px;
+  margin-top: 88px;
+}
+
+.training-group-5 img {
+  max-width: 100%;
+}
+
+.training-inner {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  left: 472px;
+  top: 2687px;
+}
+
+.exercise img {
+  max-width: 100%;
+}
+
+.training-content-2 {
+  max-width: 1213px;
+  height: 711px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 213px;
+}
+
+.training-container-2 {
+  max-width: 502px;
+  height: 454px;
+  margin-top: 104px;
+}
+
+.training-container-2 span {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 1.6;
+  color: #ff2625;
+}
+
+.training-container-2 h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.3;
+  margin-top: 18px;
+  color: #3a1212;
+}
+
+.training-container-2 p {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.6;
+  margin-top: 18px;
+  color: #504747;
+}
+
+.rectaging-inner {
+  width: 118px;
+  height: 134px;
+  position: absolute;
+  left: 1331px;
+  top: 3368px;
+}
+
+.rectaging-inner img {
+  max-width: 100%;
+}
+
+.workout {
+  width: 53px;
+  height: 53px;
+  position: absolute;
+  left: 50px;
+  top: 3014px;
+}
+
+.instroctors-content {
+  max-width: 1070.45px;
+  height: 797.45px;
+  margin: 0 auto;
+}
+
+.instroctors-component {
+  max-width: 445px;
+  height: 184px;
+  margin: 0 auto;
+  margin-top: 174px;
+}
+
+.instroctors-component span {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 1.6;
+  margin-left: 9rem;
+  color: #ff2625;
+}
+
+.instroctors-component h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.3;
+  margin-top: 10px;
+  text-align: center;
+  color: #3a1212;
+}
+
+.trainers {
+  max-width: 970px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.trainers-group {
+  width: 53px;
+  height: 53px;
+  position: absolute;
+  left: 423px;
+  top: 3585px;
+}
+
+.trainers-group img {
+  max-width: 100%;
+}
+
+.trainers-group-2 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 1182px;
+  top: 3700px;
+}
+
+.trainers-group-3 {
+  width: 114.03px;
+  height: 158.33px;
+  position: absolute;
+  left: 0;
+  top: 3527px;
+  background: rgba(255, 38, 37, 0.04);
+  border-radius: 5px;
+}
+
+.trainers-group-4 {
+  width: 130.37px;
+  height: 217.4px;
+  position: absolute;
+  left: 44px;
+  top: 3618px;
+  background: rgba(255, 38, 37, 0.04);
+  border-radius: 5px;
+}
+
+.trainers-group-5 {
+  width: 53px;
+  height: 53px;
+  position: absolute;
+  left: 87px;
+  margin-top: 383px;
+}
+
+.trainers-container {
+  max-width: 266px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.trainers-container img {
+  max-width: 100%;
+}
+
+.trainers-content h3 {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.6;
+  color: #000000;
+}
+
+.trainers-content p {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #504747;
+}
+
+.testimonial-content {
+  max-width: 1169px;
+  height: 719px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.sestion-group {
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  left: 119px;
+  top: 4372px;
+}
+
+.sestion img {
+  max-width: 100%;
+}
+
+.gym {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  left: 1173px;
+  top: 4406px;
+}
+
+.sections-groups {
+  max-width: 114.03px;
+  height: 158.33px;
+  background: rgba(255, 38, 37, 0.04);
+  border-radius: 5px;
+  position: absolute;
+  left: 800px;
+}
+
+.sestion {
+  max-width: 500px;
+  background: #c4c4c4;
+  border-radius: 100px 2px 2px 2px;
+}
+
+.sestion img {
+  max-width: 100%;
+}
+
+.sestion-inner {
+  max-width: 400px;
+  margin-left: 5rem;
+}
+
+.sestion-inner span {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 1.6;
+  color: #ff2625;
+}
+
+.sestion-inner h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.3;
+  margin-top: 14px;
+  color: #3a1212;
+}
+
+.client {
+  max-width: 624px;
+  height: 426px;
+  background: #ffffff;
+  border-radius: 2px 100px 2px 2px;
+  position: absolute;
+  left: 761px;
+  top: 4720px;
+}
+
+.client p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 25px;
+  margin-left: 50px;
+  margin-top: 50px;
+  line-height: 1.6;
+  color: #504747;
+}
+
+.client h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  margin-left: 50px;
+  margin-top: 73px;
+  line-height: 1.3;
+  color: #3a1212;
+}
+
+.client span {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  margin-left: 50px;
+  color: #504747;
+}
+
+.testimonial-group {
+  width: 159px;
+  height: 188.56px;
+  position: absolute;
+  left: 1337px;
+  top: 5048px;
+}
+
+.testimonial-group img {
+  max-width: 100%;
+}
+
+.testimonial-group-1 {
+  width: 114.03px;
+  height: 158.33px;
+  position: absolute;
+  left: 1450px;
+  top: 4658px;
+  background: rgba(255, 38, 37, 0.04);
+  border-radius: 5px;
+}
+
+.testimonial-group-2 {
+  width: 103.37px;
+  height: 217.4px;
+  left: 1410px;
+  top: 4748px;
+  position: absolute;
+  background: rgba(255, 38, 37, 0.04);
+  border-radius: 5px;
+}
+
+.jes {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 870px;
+  top: 5299px;
+}
+
+.jes img {
+  max-width: 100%;
+}
+
+.fitnes {
+  max-width: 633px;
+  height: 279px;
+  margin: 0 auto;
+  margin-top: 230px;
+}
+
+.fitnes h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.3;
+  text-align: center;
+  color: #3a1212;
+}
+
+.fitnes p {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.6;
+  text-align: center;
+  color: #504747;
+  margin-top: 17px;
+}
+
+.form {
+  max-width: 630px;
+  height: 76px;
+  border-radius: 36.5px;
+  background: #ffffff;
+  filter: drop-shadow(0px 40px 80px rgba(255, 169, 169, 0.25));
+  margin-top: 28px;
+}
+
+.form input {
+  max-width: 202px;
+  border: none;
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-left: 90px;
+  flex-grow: 2;
+}
+
+.btn {
+  padding: 5px 20px;
+  background-color: #ff2625;
+  border: none;
+  border-radius: 30px;
+  margin-left: 335px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 251px;
+  margin-top: 28px;
+  color: #ffffff;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.btn--active {
+  animation: buttonActive 0.3s both;
+}
+.btn--success {
+  animation: buttonSuccess 0.4s both;
+}
+
+.btn:hover {
+  background: brown;
+}
+
+.form--success::after {
+  position: absolute;
+  left: 33rem;
+  top: 1.8rem;
+  width: 26px;
+  height: 26px;
+  background-image: url('./images/subs.png');
+  background-size: cover;
+  content: '';
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes buttonActive {
+  to {
+    transform: translateY(-1px);
+    opacity: 1;
+  }
+}
+@keyframes buttonSuccess {
+  from {
+    opacity: 1;
+  }
+  to {
+    padding: 5px 20px;
+    background-color: #53ce67;
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(15px);
+  }
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.fitnes-group {
+  width: 114.03px;
+  height: 158.33px;
+  position: absolute;
+  left: 0px;
+  top: 5300px;
+  background: rgba(255, 38, 37, 0.04);
+  border-radius: 5px;
+}
+
+.fitnes-group-2 {
+  width: 103.37px;
+  height: 217.4px;
+  position: absolute;
+  left: 44px;
+  top: 5395px;
+  background: rgba(255, 38, 37, 0.04);
+  border-radius: 5px;
+}
+
+.fitnes-group-3 {
+  width: 53px;
+  height: 53px;
+  position: absolute;
+  left: 287px;
+  top: 5665px;
+}
+
+.fitnes-group-3 img {
+  max-width: 100%;
+}
+
+.fitnes-group-4 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 1311px;
+  top: 5650px;
+}
+
+.fitnes-group-4 img {
+  max-width: 100%;
+}
+
+.footer-content {
+  max-width: 1601px;
+  height: 440px;
+  margin: 0 auto;
+  margin-top: 250px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-container {
+  max-width: 285px;
+  height: 254px;
+  margin: 0 auto;
+}
+
+.footer-inner {
+  display: flex;
+}
+
+.footer-logo {
+  width: 48px;
+  height: 48px;
+}
+
+.footer-inner h3 {
+  margin: 1rem 0;
+  margin-left: 10px;
+  font-family: 'Abril Fatface';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.2;
+  color: #3a1212;
+}
+
+.footer-container p {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  color: #504747;
+  margin: 1rem 0;
+}
+
+.footer-icon {
+  margin: 1rem 0;
+}
+
+.footer-list {
+  max-width: 500px;
+  height: 243px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer-list ul {
+  list-style-type: none;
+}
+
+.footer-list a {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 2.4;
+  text-align: center;
+  text-decoration: none;
+  color: #504747;
+}
+
+.footer-list .list-head {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 2rem;
+  color: #3a1212;
+}
+
+.main {
+  max-width: 417px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+main {
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #a69b9b;
+}
+
+@media (max-width: 1100px) {
+  .img-block {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .nav-bar {
+    position: absolute;
+  }
+
+  .logo {
+    position: absolute;
+    left: 50px;
+    top: 5px;
+  }
+
+  .toggle {
+    margin-left: 24rem;
+  }
+
+  .rectangle {
+    position: absolute;
+    top: 248px;
+  }
+
+  .dots {
+    position: absolute;
+    left: 58rem;
+    top: 41.5rem;
+  }
+
+  .text-section {
+    max-width: 100px;
+    height: 278px;
+  }
+
+  .text-section h1 {
+    font-size: 20px;
+  }
+
+  .text-section span {
+    position: relative;
+    font-size: 20px;
+  }
+
+  .play {
+    position: absolute;
+    left: 23rem;
+    top: 17.5rem;
+  }
+
+  .exercise {
+    margin: 1rem 0;
+  }
+
+  .training-container {
+    max-width: 40%;
+    height: 40%;
+    margin-left: 70px;
+  }
+
+  .training-icon-2 {
+    position: absolute;
+    left: 1.7rem;
+    top: 104rem;
+  }
+
+  .content-text {
+    margin-top: 1px;
+  }
+
+  .training-group-2 {
+    position: absolute;
+    left: 60rem;
+  }
+
+  .training-group-5 {
+    position: absolute;
+    left: 55rem;
+    top: 130rem;
+  }
+
+  .training-content-2 {
+    max-width: 70%;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+
+  .training-component-2 {
+    max-width: 40%;
+    height: 40%;
+  }
+
+  .training-inner {
+    position: absolute;
+    left: 26rem;
+    top: 167rem;
+  }
+
+  .rectaging-inner {
+    position: absolute;
+    left: 57rem;
+    top: 187.7rem;
+  }
+
+  .training-group {
+    display: none;
+  }
+
+  .training-group-3 {
+    position: absolute;
+    left: 2rem;
+  }
+
+  .training-group-4 {
+    position: absolute;
+    left: 0;
+  }
+
+  .trainers-group-5 {
+    position: absolute;
+    left: 0;
+  }
+
+  .trainers-group {
+    position: absolute;
+    left: 20rem;
+    top: 200rem;
+  }
+  .trainers-group-2 {
+    position: absolute;
+    left: 52rem;
+    top: 209rem;
+  }
+
+  .client {
+    position: absolute;
+    left: 25rem;
+    top: 273rem;
+  }
+
+  .gym {
+    position: absolute;
+    left: 53rem;
+    top: 253rem;
+  }
+
+  .testimonial-group-1 {
+    position: absolute;
+    left: 0;
+  }
+
+  .testimonial-group-2 {
+    position: absolute;
+    left: 0;
+  }
+
+  .testimonial-group {
+    position: absolute;
+    left: 50rem;
+    top: 270rem;
+  }
+
+  .fitnes-group-4 {
+    position: absolute;
+    left: 57rem;
+    top: 330rem;
+  }
+
+  .jes {
+    position: absolute;
+    left: 32rem;
+    top: 310rem;
+  }
+
+  .fitnes-group-3 {
+    position: absolute;
+
+    left: 10rem;
+    top: 327rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    overflow: hidden;
+  }
+  .img-block {
+    max-width: 50%;
+    height: 50%;
+  }
+
+  .nav-bar {
+    position: absolute;
+  }
+
+  .logo {
+    position: absolute;
+    left: 50px;
+    top: 5px;
+  }
+
+  .toggle {
+    margin-left: 8rem;
+  }
+
+  .rectangle {
+    position: absolute;
+    top: 248px;
+  }
+
+  .dots {
+    position: absolute;
+    left: 38rem;
+    top: 17.5rem;
+  }
+
+  .text-section {
+    max-width: 100px;
+    height: 278px;
+  }
+
+  .text-section h1 {
+    font-size: 20px;
+  }
+
+  .text-section span {
+    position: relative;
+    font-size: 20px;
+  }
+
+  .play {
+    position: absolute;
+    left: 20rem;
+    top: 4rem;
+  }
+
+  .exercise h2 {
+    font-size: 150px;
+    text-align: center;
+  }
+
+  .training-container {
+    max-width: 40%;
+    height: 40%;
+    margin-left: 70px;
+  }
+
+  .training-icon-2 {
+    position: absolute;
+    left: 1.7rem;
+    top: 101rem;
+  }
+
+  .content-text span {
+    font-size: 20px;
+  }
+
+  .content-text h2 {
+    font-size: 27px;
+  }
+
+  .content-text p {
+    font-size: 17px;
+  }
+
+  .training-group-2 {
+    position: absolute;
+    left: 40rem;
+    top: 125rem;
+  }
+
+  .trainig-icon {
+    position: absolute;
+    left: 0;
+    top: -20px;
+  }
+
+  .training-group-5 {
+    position: absolute;
+    left: 30rem;
+    top: 125rem;
+  }
+
+  .training-content-2 {
+    max-width: 70%;
+    height: 600px;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+
+  .training-component-2 {
+    width: 40%;
+    height: 40%;
+  }
+
+  .training-component-2 img {
+    width: 217%;
+  }
+
+  .training-container-2 {
+    max-width: 70%;
+  }
+
+  .training-container-2 span {
+    font-size: 20px;
+  }
+
+  .training-container-2 h2 {
+    font-size: 32px;
+  }
+
+  .training-container-2 p {
+    font-size: 18px;
+  }
+
+  .training-inner {
+    position: absolute;
+    left: 21rem;
+    top: 163rem;
+  }
+
+  .rectaging-inner {
+    position: absolute;
+    left: 38rem;
+    top: 167.7rem;
+  }
+
+  .training-group {
+    display: none;
+  }
+
+  .training-group-3 {
+    position: absolute;
+    left: 2rem;
+  }
+
+  .training-group-4 {
+    position: absolute;
+    left: 0;
+  }
+
+  .trainers {
+    max-width: 80%;
+    height: 450px;
+  }
+
+  .trainers-group-5 {
+    position: absolute;
+    left: 10px;
+    top: 182rem;
+  }
+
+  .instroctors-component {
+    height: 80px;
+    margin-top: 1px;
+  }
+
+  .trainers-group {
+    position: absolute;
+    left: 10rem;
+    top: 182rem;
+  }
+
+  .trainers-group-2 {
+    position: absolute;
+    left: 40rem;
+    top: 188rem;
+  }
+
+  .sestion {
+    max-width: 100%;
+    height: 100px;
+    margin-left: 20px;
+  }
+
+  .sestion-group {
+    position: absolute;
+    left: 20px;
+    top: 265rem;
+  }
+
+  .client {
+    max-width: 70%;
+    height: 350px;
+    left: 13rem;
+    top: 247rem;
+  }
+
+  .client p {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+
+  .gym {
+    position: absolute;
+    left: 42rem;
+    top: 233rem;
+  }
+
+  .testimonial-content {
+    height: 500px;
+  }
+
+  .testimonial-group-1 {
+    position: absolute;
+    left: 0;
+  }
+
+  .testimonial-group-2 {
+    position: absolute;
+    left: 0;
+  }
+
+  .testimonial-group {
+    margin-left: -200px;
+    margin-top: -116px;
+  }
+
+  .fitnes-group-4 {
+    position: absolute;
+    left: 42rem;
+    top: 298rem;
+  }
+
+  .jes {
+    position: absolute;
+    left: 23rem;
+    top: 275rem;
+  }
+
+  .fitnes-group-3 {
+    position: absolute;
+    left: 10rem;
+    top: 300rem;
+  }
+
+  .footer-content {
+    max-width: 90%;
+  }
+}
